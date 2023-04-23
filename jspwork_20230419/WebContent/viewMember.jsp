@@ -51,7 +51,9 @@
 <!-- 					getString : 문자타입의 컬럼 값 받을 때 사용 -->
 <%-- 						<td><%= rs.getString("id") %></td> --%>
 						<td>
-						<a href="updateMember.jsp?id=<%= rs.getString("id") %>"></a>
+						<a href="updateMember.jsp?id=<%= rs.getString("id") %>">
+								<%= rs.getString("id") %>
+						</a>
 						</td>
 						<td><%= rs.getString("name") %></td>
 <!-- 						getInt : 숫자타입의 컬럼 값 받을 때 사용 -->
